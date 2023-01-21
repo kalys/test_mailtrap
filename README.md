@@ -1,21 +1,13 @@
 # TestMailtrap
 
-**TODO: Add description**
+Test Mailtrap adapters for Bamboo manually
 
-## Installation
+Start console
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `test_mailtrap` to your list of dependencies in `mix.exs`:
+    API_TOKEN=PASTE_TOKEN_HERE iex -S mix
 
-```elixir
-def deps do
-  [
-    {:test_mailtrap, "~> 0.1.0"}
-  ]
-end
-```
+In console run
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/test_mailtrap>.
+    TestMailtrap.test_all()
 
+In `config/config.exs` you can switch between Sandbox and Sending adapters.
